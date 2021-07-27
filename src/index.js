@@ -4,9 +4,54 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const DATA = [
+  {groupId: "1", 
+    ruleId: "1002", 
+    priority: "0", 
+    metadata: "1" , 
+    child: ["1","2"],
+    position: "0"
+  },
+  { groupId: "2", 
+    ruleId: "2048", 
+    priority: "0", 
+    metadata: "1=1" , 
+    child: [],
+    position: "1"
+  },
+  { groupId: "3", 
+    ruleId: "3017", 
+    priority: "1", 
+    metadata: "1+1=2" , 
+    child: ["3"],
+    position: "1"
+  },
+  { groupId: "4", 
+    ruleId: "4058", 
+    priority: "1", 
+    metadata: "1+2=3" , 
+    child: [],
+    position: "2"
+  },
+  { groupId: "5", 
+    ruleId: "5001", 
+    priority: "1", 
+    metadata: "2+1=3" , 
+    child: [],
+    position: "2"
+  },
+  { groupId: "6", 
+    ruleId: "6041", 
+    priority: "1", 
+    metadata: "2+2=4" , 
+    child: [],
+    position: "3"
+  },
+];
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App rules = {DATA}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

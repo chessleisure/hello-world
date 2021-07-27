@@ -1,38 +1,71 @@
-.App {
+.DEMO {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  color:goldenrod;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rule {
+  margin-left: 20px;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: row;
 }
 
-.App-header {
+.ruleName {
+  background-color:goldenrod;
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.ruleName_clicked {
+  background-color:tomato;
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.ruleNameFont {
+  color: aliceblue;
+  font-size:25px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.ruleContent {
+  margin-top: 70px;
+  margin-left: -40px;
+  background-color: indigo;
+  height: 40px;
+  width: 100px;
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.ruleContentFont {
+  font-size: 15px;
+}
+
+body {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
